@@ -1,24 +1,23 @@
-📚 Kütüphane Yönetim Sistemi (Library Management System)
-Bu proje, KTÜ Bilgisayar Bilimleri 2. sınıf eğitimim kapsamında, C++ dili ve Nesne Yönelimli Programlama (OOP) prensipleri temel alınarak geliştirilmiştir. Bir kütüphanenin günlük işleyişini dijital ortamda yönetmeyi amaçlayan modüler bir sistemdir.
+📚 Kütüphane Yönetim Sistemi
+C++ ile 3 katmanlı mimari yapısı ve Nesne Yönelimli Programlama (OOP) prensipleri temel alınarak geliştirilmiş kütüphane yönetim uygulaması.
 
-🚀 Öne Çıkan Özellikler
-Gelişmiş Nesne Yapısı: Kitap, Üye, Yazar, Kategori ve Rezervasyon gibi varlıklar (Entities), OOP'nin kapsülleme (encapsulation) prensibiyle tasarlanmıştır.
+✨ Özellikler
+3 Katmanlı Yapı: Veri modelleri, iş mantığı ve uygulama giriş noktası birbirinden ayrılarak modülerlik sağlandı.
 
-İş Mantığı Ayrımı: Kütüphane operasyonları, merkezi bir servis katmanı (KutuphaneServisi) üzerinden yönetilerek kodun okunabilirliği ve bakımı kolaylaştırılmıştır.
+Modüler Tasarım: Kitap, Üye, Yazar ve Rezervasyon birimleri bağımsız sınıflar olarak kurgulandı.
 
-Dinamik Veri Yönetimi: Veriler arasındaki ilişkiler (örneğin bir kitabın yazarı veya bir üyenin aldığı ödünç kitaplar) sınıf yapıları içerisinde modellenmiştir.
+OOP Uygulaması: Kod yapısında kapsülleme (encapsulation) ve kalıtım (inheritance) prensipleri temel alındı.
 
-🛠️ Teknik Detaylar
-Dil: C++
+📁 Proje Yapısı (src)
+Kodun sürdürülebilirliği için şu klasör yapısı kullanılmıştır:
 
-Mimari: Nesne Yönelimli Programlama (OOP)
+*- src/entities/: Temel sınıf tanımları ve veri modelleri (Kitap, Üye, Yazar vb.).
 
-Kullanılan Yapılar: Sınıflar (Classes), Kalıtım (Inheritance), Vektörler ve Modüler Proje Yapısı.
+*- src/services/: Kütüphane iş mantığının (business logic) ve operasyonların yönetildiği servis katmanı.
 
-📁 Proje Yapısı
-Plaintext
+*- main.cpp: Uygulamanın giriş ve test noktası.
 
-src/
- ├── entities/       # Varlık tanımları (Kitap, Uye, Yazar vb.)
- ├── services/       # İş mantığının (business logic) yürütüldüğü katman
- └── main.cpp        # Uygulamanın giriş ve test noktası
+🛠️ Teknolojiler
+*- C++
+*- 3 Katmanlı Mimari
+*- Nesne Yönelimli Programlama
